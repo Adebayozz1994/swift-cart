@@ -8,9 +8,11 @@
 
 body {
     font-family: montserrat;
+    /* background-color: #261F28 !important; */
 }
 
 nav {
+    z-index: 99 !important;
     background: #261F28;
     height: 80px;
     width: 100%;
@@ -27,6 +29,7 @@ label.logo {
 nav ul {
     float: right;
     margin-right: 20px;
+    z-index: 100;
 }
 
 nav ul li {
@@ -62,12 +65,78 @@ a:hover {
 #check {
     display: none;
 }
+/* carousel */
+.d-block{
+    height: 500px;
+}
+
+/* product */
+.product{
+    height: 700px;
+    margin-top: 80px;
+}
+.product h1{
+    color: #F23D3D;
+}
+.box-1{
+    margin-top: 40px;
+    background-color: white;
+    height: 320px;
+    width: 240px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 15px;
+    box-shadow: rgba(20, 10, 10, 0.5) 0px 1px 3px 1px;
+    margin-left: 20px;
+}
+
+.box-1 img{
+    height: 320px;
+    width: 240px;
+}
+
+
+
+.box-2{
+    margin-top: 40px;
+    background-color: white;
+    height: 400px;
+    width: 260px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 15px;
+    box-shadow: rgba(20, 10, 10, 0.5) 0px 1px 3px 1px;
+    margin-left: 20px;
+}
+.boxxx button{
+    background-color: rgb(189, 47, 47);
+    padding: 10px 14px;
+    border: none;
+}
+.button2{
+    text-decoration: none;
+    color: white;
+}
+.boxxx{
+    padding: 14px 16px;
+    color: green;
+}
+.box-2 img{
+    height: 200px;
+    width: 260px;
+}
+
+
+
 
 @media(max-width:952px) {
     label.logo {
         font-size: 30px;
         margin-left: 30px;
         padding: 0px;
+        
+    }
+
+    nav{
+        z-index: 100 !important;
     }
 
     nav ul li a {
@@ -109,5 +178,8 @@ a:hover {
 
     #check:checked~ul {
         left: 0;
+    }
+    .d-block{
+        height: 300px;
     }
 }
